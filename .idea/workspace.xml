@@ -19,13 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ef8862-490b-4128-a3bd-1fdc2977861f" name="Default Changelist" comment="Initial commit">
+    <list default="true" id="d3ef8862-490b-4128-a3bd-1fdc2977861f" name="Default Changelist" comment="Title update">
+      <change afterPath="$PROJECT_DIR$/routes/accounts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Pug File" />
+        <option value="Jade File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,7 +54,6 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
@@ -58,7 +71,11 @@
       <option name="presentableId" value="Default" />
       <updated>1596821176898</updated>
       <workItem from="1596821177937" duration="651000" />
-      <workItem from="1596824475260" duration="86000" />
+      <workItem from="1596824475260" duration="2013000" />
+      <workItem from="1596828704169" duration="385000" />
+      <workItem from="1596904982057" duration="2424000" />
+      <workItem from="1596907763965" duration="48000" />
+      <workItem from="1597161498136" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1596821710828</created>
@@ -74,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596821791797</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Title update">
+      <created>1596824654061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596824654061</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,33 +114,35 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Intial commit" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Title update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Title update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="437" y="195" key="EditFileWatcherDialog" timestamp="1596824557087">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="437" y="195" key="EditFileWatcherDialog/0.0.1536.834@0.0.1536.834" timestamp="1596824557087" />
-    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1596822621006">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1596907811648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596822621006" />
-    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1596822621006">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596907811648" />
+    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1596907811648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1596822621006" />
-    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1596822621006">
+    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1596907811648" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1596907811648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1596822621006" />
-    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1596822621006">
+    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1596907811648" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1596907811648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1596822621006" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1596907811648" />
     <state x="513" y="119" key="RollbackChangesDialog" timestamp="1596822207065">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -125,17 +151,25 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1596824559659" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1596822483315">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1596824659417">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1596822483315" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1596824659417" />
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596822475631">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1596822475631" />
+    <state x="478" y="16" width="579" height="801" key="find.popup" timestamp="1596824594022">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="478" y="16" width="579" height="801" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1596824594022" />
     <state x="570" y="323" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596821420928">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="570" y="323" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.834@0.0.1536.834" timestamp="1596821420928" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1596905486173">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1536.834@0.0.1536.834" timestamp="1596905486173" />
   </component>
 </project>
