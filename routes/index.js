@@ -24,6 +24,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 //firebase.analytics();
 
+//
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -48,13 +49,24 @@ firebase.auth().onAuthStateChanged(function(user) {
 router.get('/', function(req, res, next) {
   res.render('index', { title: '360 Financial Tools' });
 
-  firebase.auth().signInWithEmailAndPassword("test@gmail.com", "123").catch(function(error) {
+  /*firebase.auth().signInWithEmailAndPassword("test@gmail.com", "123").catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log(errorMessage);
-  });
+  });*/
 
+  firebase.auth().createUserWithEmailAndPassword("email@.com", "12345678").catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    if (errorCode == null) {
+      console.log("Signed up");
+    }else{
+      console.log(errorMessage);
+    }
+  });
 
 
 });
