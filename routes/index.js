@@ -1,13 +1,10 @@
-var express = require('express');
-var router = express.Router();
-
-// Firebase App (the core Firebase SDK) is always required and
-// must be listed before other Firebase SDKs
-var firebase = require('firebase/app');
-
-// Add the Firebase products that you want to use
 require("firebase/auth");
 require("firebase/firestore");
+
+var express = require('express');
+var router = express.Router();
+var firebase = require('firebase/app');
+const jwtHelper = require('./jwtHelper');
 
 var firebaseConfig = {
   apiKey: "AIzaSyAk6r7AyBonnTaipxxCBUQ0ZNia2GRYm30",
@@ -20,9 +17,7 @@ var firebaseConfig = {
   measurementId: "G-701H03H9X7"
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-//firebase.analytics();
 
 //
 firebase.auth().onAuthStateChanged(function(user) {
@@ -48,6 +43,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: '360 Financial Tools' });
+  jwtHelper.timeMethod();
 
   /*firebase.auth().signInWithEmailAndPassword("test@gmail.com", "123").catch(function(error) {
     // Handle Errors here.
@@ -56,7 +52,7 @@ router.get('/', function(req, res, next) {
     console.log(errorMessage);
   });*/
 
-  firebase.auth().createUserWithEmailAndPassword("email@.com", "12345678").catch(function(error) {
+ /* firebase.auth().createUserWithEmailAndPassword("email@.com", "12345678").catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -66,7 +62,7 @@ router.get('/', function(req, res, next) {
     }else{
       console.log(errorMessage);
     }
-  });
+  });*/
 
 
 });
