@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ef8862-490b-4128-a3bd-1fdc2977861f" name="Default Changelist" comment="Firebase authentication working">
+    <list default="true" id="d3ef8862-490b-4128-a3bd-1fdc2977861f" name="Default Changelist" comment="Json web token installed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/jwtHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/jwtHelper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +56,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yaksh Patel\WebstormProjects\360-Financial-Tool---Webapp\files" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yaksh Patel\WebstormProjects\360-Financial-Tool---Webapp\routes" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +84,7 @@
       <workItem from="1596907763965" duration="48000" />
       <workItem from="1597161498136" duration="2339000" />
       <workItem from="1597167179578" duration="238000" />
+      <workItem from="1597263959689" duration="3086000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1596821710828</created>
@@ -109,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597162603786</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Json web token installed.">
+      <created>1597264678083</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597264678083</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,33 +152,86 @@
     <MESSAGE value="Title update" />
     <MESSAGE value="Firebase installed" />
     <MESSAGE value="Firebase authentication working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Firebase authentication working" />
+    <MESSAGE value="Json web token installed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Json web token installed." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="437" y="195" key="EditFileWatcherDialog" timestamp="1596824557087">
+    <state x="530" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597264475172">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="437" y="195" key="EditFileWatcherDialog/0.0.1536.834@0.0.1536.834" timestamp="1596824557087" />
-    <state width="1453" height="224" key="GridCell.Tab.0.bottom" timestamp="1597167417842">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="530" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1597264475172" />
+    <state x="437" y="195" key="EditFileWatcherDialog" timestamp="1597263980940">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="437" y="195" key="EditFileWatcherDialog/0.0.1536.834@0.0.1536.834" timestamp="1597263980940" />
+    <state width="1515" height="157" key="GridCell.Tab.0.bottom" timestamp="1597267026610">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597163168461" />
-    <state width="1453" height="224" key="GridCell.Tab.0.center" timestamp="1597167417842">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1515" height="157" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597267026610" />
+    <state width="1515" height="157" key="GridCell.Tab.0.center" timestamp="1597267026609">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597163168460" />
-    <state width="1453" height="224" key="GridCell.Tab.0.left" timestamp="1597167417842">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1515" height="157" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597267026609" />
+    <state width="1515" height="157" key="GridCell.Tab.0.left" timestamp="1597267026609">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597163168460" />
-    <state width="1453" height="224" key="GridCell.Tab.0.right" timestamp="1597167417842">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1515" height="157" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597267026609" />
+    <state width="1515" height="157" key="GridCell.Tab.0.right" timestamp="1597267026609">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597163168461" />
+    <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597267026609" />
+    <state width="1515" height="265" key="GridCell.Tab.1.bottom" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.1.center" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.1.left" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.1.right" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.2.bottom" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.2.center" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.2.left" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.2.right" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.3.bottom" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.3.center" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.3.left" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
+    <state width="1515" height="265" key="GridCell.Tab.3.right" timestamp="1597265368791">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="265" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1597265368791" />
     <state x="513" y="119" key="RollbackChangesDialog" timestamp="1596822207065">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -169,10 +241,10 @@
     </state>
     <state x="266" y="64" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1597167199016" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1596824559659" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1597164456980">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1597264513517">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1597164456980" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1597264513517" />
     <state x="562" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597167298296">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
