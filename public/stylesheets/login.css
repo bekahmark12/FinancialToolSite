@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patua One', cursive;
+}
+
+.container {
+    background-color: #EFF3F8;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    margin: 10px 30px;
+}
+
+.login-container {
+    background-color: white;
+    color: hsla(0, 0%, 0%, 0.8);
+    width: 66%;
+    height: 80%;
+    box-shadow: rgba(23, 48, 73, 0.12) 0px 4px 12px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h1 {
+    color: var(--blue);
+    font-size: 2.4em;
+}
+
+h3 {
+    color: gray;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-left: 4px;
+}
+
+
+/* LEFT SECTION STARTS HERE*/
+
+.left-section {
+    position: relative;
+}
+
+.left-section img {
+    position: absolute;
+    max-height: 220px;
+    max-width: 300px;
+    min-width: 100px;
+    min-height: 60px;
+    bottom: 6px;
+    left: 24px;
+    z-index: 3;
+}
+
+.rings-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.info-container {
+    position: absolute;
+    min-width: 300px;
+    max-width: 600px;
+    z-index: 2;
+    top: 35%;
+}
+
+.background svg {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#auth-blob-one {
+    font-family: Roboto, sans-serif;
+    stroke: var(--green);
+    stroke-width: 22px;
+    fill: transparent;
+    mix-blend-mode: multiply;
+}
+
+#auth-blob-two {
+    font-family: Roboto, sans-serif;
+    color: var(--green-eight);
+    fill: transparent;
+    mix-blend-mode: multiply;
+    stroke: var(--red);
+    stroke-width: 22px;
+}
+
+#auth-blob-three {
+    font-family: Roboto, sans-serif;
+    color: var(--green-eight);
+    stroke: var(--blue);
+    stroke-width: 22px;
+    fill: transparent;
+    mix-blend-mode: multiply;
+}
+
+.right-section {
+    background-color: #F5F7F8;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+:root {
+    --red: #ff5971;
+    --green: #3cc76f;
+    --blue: #536DFB;
+    --red-two: #ffedeb;
+    --green-two: #d0eedb;
+    --green-seven: #304538;
+    --green-nine: #2b352f;
+    --green-ten: #151615;
+    --authentication-wrapper-pointer-event: auto;
+    --authentication-wrapper-opacity: 1;
+}
