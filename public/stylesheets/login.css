@@ -104,7 +104,6 @@ h3 {
 
 #auth-blob-two {
     font-family: Roboto, sans-serif;
-    color: var(--green-eight);
     fill: transparent;
     mix-blend-mode: multiply;
     stroke: var(--red);
@@ -113,7 +112,6 @@ h3 {
 
 #auth-blob-three {
     font-family: Roboto, sans-serif;
-    color: var(--green-eight);
     stroke: var(--blue);
     stroke-width: 22px;
     fill: transparent;

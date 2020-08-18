@@ -19,21 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ef8862-490b-4128-a3bd-1fdc2977861f" name="Default Changelist" comment="removed node_modules">
-      <change afterPath="$PROJECT_DIR$/public/images/man-svg-data.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whitelogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login-h.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login-n.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_08_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_08_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_18_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_18_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_52_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_52_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_2020_9_43_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_2020_9_43_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_7_2020_12_40_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_7_2020_12_40_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="d3ef8862-490b-4128-a3bd-1fdc2977861f" name="Default Changelist" comment="Login html and css completed.">
+      <change afterPath="$PROJECT_DIR$/views/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_08_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_08_AM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_18_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_18_AM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_52_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_11_2020_10_52_AM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login-h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login-n.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/login-n.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +102,10 @@
       <workItem from="1597413683256" duration="92000" />
       <workItem from="1597431015793" duration="109000" />
       <workItem from="1597680596990" duration="1733000" />
+      <workItem from="1597690336821" duration="48000" />
+      <workItem from="1597690402738" duration="630000" />
+      <workItem from="1597759018101" duration="3974000" />
+      <workItem from="1597775782783" duration="333000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1596821710828</created>
@@ -160,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597353255444</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Login html and css completed.">
+      <created>1597690378944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597690378945</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +197,8 @@
     <MESSAGE value="Json web token installed." />
     <MESSAGE value="JWT Token Signing successful. Http requests working. Connected to Sandbox and users data can be retrieved." />
     <MESSAGE value="removed node_modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed node_modules" />
+    <MESSAGE value="Login html and css completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Login html and css completed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597264475172">
@@ -202,26 +213,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="437" y="195" key="EditFileWatcherDialog/0.0.1536.834@0.0.1536.834" timestamp="1597263980940" />
-    <state width="1515" height="157" key="GridCell.Tab.0.bottom" timestamp="1597683202292">
+    <state width="1515" height="157" key="GridCell.Tab.0.bottom" timestamp="1597762996962">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="157" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597683202292" />
-    <state width="1515" height="157" key="GridCell.Tab.0.center" timestamp="1597683202291">
+    <state width="1515" height="157" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597762996962" />
+    <state width="1515" height="157" key="GridCell.Tab.0.center" timestamp="1597762996962">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="157" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597683202291" />
-    <state width="1515" height="157" key="GridCell.Tab.0.left" timestamp="1597683202291">
+    <state width="1515" height="157" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597762996962" />
+    <state width="1515" height="157" key="GridCell.Tab.0.left" timestamp="1597762996962">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="157" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597683202291" />
-    <state width="1515" height="157" key="GridCell.Tab.0.right" timestamp="1597683202292">
+    <state width="1515" height="157" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597762996962" />
+    <state width="1515" height="157" key="GridCell.Tab.0.right" timestamp="1597762996962">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
-    <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597683202292" />
+    <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597762996962" />
     <state width="1515" height="265" key="GridCell.Tab.1.bottom" timestamp="1597267200040">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -279,19 +290,19 @@
     </state>
     <state x="266" y="64" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1597167199016" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1596824559659" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1597267184484">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1597690418689">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1597267184484" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597413694328">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1597690418689" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597690349259">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="562" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1597167298296" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1597413694328" />
-    <state x="478" y="16" width="579" height="801" key="find.popup" timestamp="1596824594022">
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1597690349259" />
+    <state x="478" y="16" width="579" height="801" key="find.popup" timestamp="1597762162996">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="478" y="16" width="579" height="801" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1596824594022" />
+    <state x="478" y="16" width="579" height="801" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1597762162996" />
     <state x="570" y="323" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596821420928">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
