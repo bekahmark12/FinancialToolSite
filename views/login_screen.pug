@@ -416,10 +416,10 @@ head
 
         .right-section
             .form-container.sign-in-container
-                form(action='#')
+                form(action='/login' method="POST")
                     h2#login-tag Log In
                     input(type='email' placeholder='Email')
                     input(type='password' placeholder='Password')
                     a#forgot-password(href='#') Forgot your password?
-                    button Sign In
+                    button(type="submit") Sign In
 
