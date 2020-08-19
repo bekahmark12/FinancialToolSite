@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ef8862-490b-4128-a3bd-1fdc2977861f" name="Default Changelist" comment="Login ui merge fix">
+      <change afterPath="$PROJECT_DIR$/routes/apiHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_2020_9_43_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_12_2020_9_43_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/jwtHelper.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login_screen.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/login_screen.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +36,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jade File" />
-        <option value="JavaScript File" />
         <option value="Pug File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -103,6 +103,7 @@
       <workItem from="1597778583118" duration="492000" />
       <workItem from="1597779435118" duration="3745000" />
       <workItem from="1597790849059" duration="6995000" />
+      <workItem from="1597853941595" duration="2873000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1596821710828</created>
@@ -226,6 +227,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="530" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1597264475172" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597856718099">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1597856718099" />
     <state x="516" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1597681341922">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -234,26 +239,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="437" y="195" key="EditFileWatcherDialog/0.0.1536.834@0.0.1536.834" timestamp="1597263980940" />
-    <state width="1515" height="157" key="GridCell.Tab.0.bottom" timestamp="1597798152848">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1515" height="218" key="GridCell.Tab.0.bottom" timestamp="1597856814765">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
     <state width="1515" height="157" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597798152848" />
-    <state width="1515" height="157" key="GridCell.Tab.0.center" timestamp="1597798152847">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1515" height="218" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597856814765" />
+    <state width="1515" height="218" key="GridCell.Tab.0.center" timestamp="1597856814764">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
     <state width="1515" height="157" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597798152847" />
-    <state width="1515" height="157" key="GridCell.Tab.0.left" timestamp="1597798152847">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1515" height="218" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1597856814764" />
+    <state width="1515" height="218" key="GridCell.Tab.0.left" timestamp="1597856814764">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
     <state width="1515" height="157" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597798152847" />
-    <state width="1515" height="157" key="GridCell.Tab.0.right" timestamp="1597798152848">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1515" height="218" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1597856814764" />
+    <state width="1515" height="218" key="GridCell.Tab.0.right" timestamp="1597856814764">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1453" height="224" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1597167417842" />
     <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597798152848" />
+    <state width="1515" height="218" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1597856814764" />
     <state width="1515" height="265" key="GridCell.Tab.1.bottom" timestamp="1597267200040">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
