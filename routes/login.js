@@ -2,17 +2,15 @@
 require("firebase/auth");
 require("firebase/firestore");
 
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const firebase = require('firebase/app');
 
-var firebase = require('firebase/app');
-
+const router = express.Router();
 const app = express();
 
 // middleware
 app.use(express.json());
 app.use(express.urlencoded());
-
 
 var firebaseConfig = {
     apiKey: "AIzaSyAk6r7AyBonnTaipxxCBUQ0ZNia2GRYm30",
@@ -27,37 +25,9 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-//
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        // User is signed in.
-        var displayName = user.displayName;
-        var email = user.email;
-        var emailVerified = user.emailVerified;
-        var photoURL = user.photoURL;
-        var isAnonymous = user.isAnonymous;
-        var uid = user.uid;
-        var providerData = user.providerData;
-        // ...
-        console.log("email: " + email);
-        console.log("Logged IN");
-    } else {
-        // User is signed out.
-        // ...
-    }
-});
-
-
 router.get('/', function(req, res, next){
     console.log("get method")
-    res.render('login_screen');
-
-    /*firebase.auth().signInWithEmailAndPassword("test@gmail.com", "123").catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log(errorMessage);
-  });*/
+    res.render('login_screen')
 
     /* firebase.auth().createUserWithEmailAndPassword("email@.com", "12345678").catch(function(error) {
        // Handle Errors here.
@@ -73,9 +43,39 @@ router.get('/', function(req, res, next){
 });
 
 router.post('/', function (req,res){
-    console.log("post method begin")
-    console.log(req.body)
 
+    console.log("login post method:")
+    const email = req.body.email
+    const password = req.body.password
+
+    if (email && password) {
+        firebase.auth().signInWithEmailAndPassword(email, password).then(function (successful){
+
+            if (successful.user){
+                console.log("Log in successful")
+                //use express session 
+                req.session.displayName = successful.user.displayName
+                res.redirect('/dashboard')
+
+            }
+
+        })
+            //Login error handling
+            .catch(function (error){
+            switch (error.code){
+                case "auth/wrong-password":
+                    break
+                case "auth/invalid-email":
+                    break
+                case "user-not-found":
+                    break
+                default:
+                    break
+            }
+            console.log(error.message)
+        })
+
+    }
 });
 
 module.exports = router;
