@@ -408,19 +408,20 @@ head
                                   701.2928896366744 400\
                                   Z')
                 .info-container
-                    h1 Welcome Back
-                    h3 Step back into managing
+                    h1 Welcome
+                    h3 Start the journey of
                         br
-                        |  your finances.
+                        |  managing personal finances.
             img(src='images/man-svg-data.svg')
 
         .right-section
             .form-container.sign-in-container
                 form(action='/login' method="POST")
-                    h2#login-tag Log In
+                    h2#login-tag Register
                     .error #{message}
+                    input(type='name' name="name" placeholder='Full Name' required=true)
                     input(type='email' name="email" placeholder='Email' required=true)
                     input(type='password' name="password" placeholder='Password' required=true)
-                    a#forgot-password(href='#') Forgot your password?
-                    button(type="submit") Sign In
+                    a#forgot-password(href='/login') Already have a account?
+                    button(type="submit") Sign Up
 

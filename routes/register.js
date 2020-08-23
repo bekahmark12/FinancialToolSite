@@ -1,44 +1,21 @@
+var express = require("express")
+var router = express.Router();
 
-require("firebase/auth");
-require("firebase/firestore");
-
-const express = require('express');
-const firebase = require('firebase/app');
-
-const router = express.Router();
-const app = express();
-
-// middleware
-app.use(express.json());
-app.use(express.urlencoded());
-
-var firebaseConfig = {
-    apiKey: "AIzaSyAk6r7AyBonnTaipxxCBUQ0ZNia2GRYm30",
-    authDomain: "financial-360.firebaseapp.com",
-    databaseURL: "https://financial-360.firebaseio.com/",
-    projectId: "financial-360",
-    storageBucket: "financial-360.appspot.com",
-    messagingSenderId: "453392617493",
-    appId: "1:453392617493:web:860f12c221970ea4af7e1c",
-    measurementId: "G-701H03H9X7"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-router.get('/', function(req, res, next){
-    console.log("get method")
-    res.render('login_screen', {message:""})
+router.get("/", function(req, res, next){
+    console.log("Getting register screen.....")
+    res.render('register')
 
 });
 
 router.post('/', function (req,res){
 
-    console.log("login post method:")
+    console.log("register post method:")
+    const name = req.body.name
     const email = req.body.email
     const password = req.body.password
 
-    if (email && password) {
-        firebase.auth().signInWithEmailAndPassword(email, password).then(function (successful){
+    if (email && password && name) {
+        firebase.auth().createUserWithEmailAndPassword("email@.com", "12345678").then(function (successful){
 
             if (successful.user){
                 console.log("Log in successful")
@@ -72,5 +49,6 @@ router.post('/', function (req,res){
 
     }
 });
+
 
 module.exports = router;

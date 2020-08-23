@@ -17,11 +17,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 /** ROUTES */
+//Home routes
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var accountsRouter = require('./routes/accounts');
-var loginRouter = require('./routes/login');
 var aboutRouter = require('./routes/about');
+var errorRouter = require('./routes/error');
+
+// Login and register
+var registerRouter = require('./routes/register');
+var loginRouter = require('./routes/login');
+
+// App routes
+var accountsRouter = require('./routes/accounts');
 var dashboardRouter = require('./routes/dashboard');
 
 
@@ -31,12 +37,12 @@ app.set('view engine', 'pug');
 
 //Set the path redirection
 app.use('/', indexRouter);
-app.use('/home', usersRouter)
 app.use('/accounts', accountsRouter);
 app.use('/login', loginRouter)
 app.use('/team', aboutRouter);
 app.use('/dashboard',dashboardRouter)
-
+app.use('/error',errorRouter)
+app.use('/register',registerRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
