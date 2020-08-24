@@ -1,6 +1,28 @@
-extends layout
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title 360 Financial Tool
+  link(href='stylesheets/index.css' rel='stylesheet')
+.nav-container
+  .navbar
+    img#navbar-logo(src='images/whitelogo.png')
+    #mobile-menu.menu-toggle
+      span.bar
+      span.bar
+      span.bar
+    ul.nav-menu
+      li
+        a.nav-links(href='/') Home
+      li
+        a.nav-links(href='#') About
+      li
+        a.nav-links(href='#') Security
+      li
+        a.nav-links.login-btn(href='/register') Get Started!
+    .login-btn
+        a.nav-links.login-btn(href='/login') Log In
 
-block content
-  h1= title
-  p Welcome to #{title}
-  p Hi to #{name}
+
+
+
