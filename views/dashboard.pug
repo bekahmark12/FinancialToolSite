@@ -1,4 +1,25 @@
 extends layout
 
 block content
-    h1= "Welcome " + displayName
+    section(class="section")
+        
+        div(class="column")
+            div(class="box")
+                p(class="title") Monthly Statement
+                
+                div(class="level")
+                    div(class="level-item")
+                        div
+                            p Checking
+                            p $0.00
+                    div(class="level-item")
+                        div
+                            p Savings
+                            p $0.00
+                    div(class="level-item")
+                        div
+                            p Debt
+                            p $0.00
+
+                    
+            
