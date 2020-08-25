@@ -1,0 +1,37 @@
+doctype html
+script(type='text/javascript' src='https://cdn.yodlee.com/fastlink/v3/initialize.js')
+
+
+#container-fastlink
+    div(style='text-align: center;')
+        input#btn-fastlink(type='submit' value='Link an Account')
+
+script.
+    var token = !{JSON.stringify(token)};
+    (function (window) {
+        //Open FastLink
+        var fastlinkBtn = document.getElementById('btn-fastlink');
+        fastlinkBtn.addEventListener('click', function() {
+                window.fastlink.open({
+                        fastLinkURL: 'https://node.sandbox.yodlee.com/authenticate/restserver',
+                        jwtToken: 'Bearer ' + token,
+                        params: {
+                            userExperienceFlow : 'Aggregation'
+                        },
+                        onSuccess: function (data) {
+                            console.log(data);
+                        },
+                        onError: function (data) {
+                            console.log(data);
+                        },
+                        onExit: function (data) {
+                            console.log(data);
+                        },
+                        onEvent: function (data) {
+                            console.log(data);
+                        }
+                    },
+                    'container-fastlink');
+            },
+            false);
+    }(window));

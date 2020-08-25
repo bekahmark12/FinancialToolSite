@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
 var errorRouter = require('./routes/error');
+var fastlinkRouter = require('./routes/fastlink');
 
 // Login and register
 var registerRouter = require('./routes/register');
@@ -43,6 +44,7 @@ app.use('/team', aboutRouter);
 app.use('/dashboard',dashboardRouter)
 app.use('/error',errorRouter)
 app.use('/register',registerRouter)
+app.use('/fastlink', fastlinkRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
