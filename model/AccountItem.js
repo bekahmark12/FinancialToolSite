@@ -1,6 +1,6 @@
 class AccountItem {
 
-    constructor(title = "", subTitle = "", balance = "", accId = "", container = "", dueDateString = "", dueDate = "", accNumber = "", iconUrl = "") {
+    constructor(title = "", subTitle = "", balance = "", accId = "", container = "", dueDateString = "", dueDate = "", accNumber = "", iconUrl = "", accountType= "") {
         this.title = title;
         this.subTitle = subTitle;
         this.balance = balance;
@@ -10,6 +10,7 @@ class AccountItem {
         this.dueDate = dueDate;
         this.accNumber = accNumber;
         this.iconUrl = iconUrl;
+        this.accountType = accountType;
     }
 
     getAccountArray(json){
@@ -18,14 +19,16 @@ class AccountItem {
         var accArray = [];
 
         for(var i = 0; i < array.length; i++){
+            // const newAccObj = array[i];
+            // var acc = new AccountItem(1, 1, 1, 1, 1, 1, 1, 1, 1)
           var acc = new AccountItem(array[i].accountName, array[i].accountNumber + array[i].providerName,
                                     array[i].balance.amount, array[i].id, array[i].CONTAINER, array[i].dueDateString, array[i].dueDate,
-                                    array[i].fullAccountNumber, array[i].iconUrl);
+                                    array[i].fullAccountNumber, array[i].iconUrl, array[i].accountType);
           accArray.push(acc)
-          console.log(acc.title);
+          
         }
 
-        return accArray
+        return accArray;
     }
 }
 module.exports = AccountItem;

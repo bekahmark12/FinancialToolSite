@@ -16,7 +16,7 @@ class apiHelper{
         return jwt.sign({ iss: issuerId, sub: 'sbMemfcIVWnzoVXXDf2', iat: currentTime[0], exp: currentTime[1] }, privateKey, { algorithm: 'RS512' })
     }
 
-    static getAccountData = function() {
+    static getAccountData = function(data) {
         const options = {
             url: "https://sandbox.api.yodlee.com/ysl/accounts/",
             headers: {
@@ -30,8 +30,9 @@ class apiHelper{
             // console.error('error:', error); // Print the error if one occurred
             // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             // console.log('body:', body); // Print the HTML for the Google homepage.
-            return body
+            return data(body);
         });
+
     }
 
     static getTransactionData = function() {
@@ -51,6 +52,8 @@ class apiHelper{
             return body
         });
     }
+
+
 }
 
 

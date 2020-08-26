@@ -1,4 +1,4 @@
-extends layout
+extends index
 
 block content
     section(class="section")
@@ -11,15 +11,18 @@ block content
                     div(class="level-item")
                         div
                             p Checking
-                            p $0.00
+                            p
+                                |$#{checking}
                     div(class="level-item")
                         div
                             p Savings
-                            p $0.00
+                            p 
+                                |$#{savings}
                     div(class="level-item")
                         div
                             p Debt
-                            p $0.00
+                            p 
+                                |$#{debt}
 
                     
             
