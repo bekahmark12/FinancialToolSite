@@ -1,8 +1,10 @@
-const issuerId = "0098bef0-b5ec9eae-c9a5-4241-8a22-e2a5397a9bf8"
+require('dotenv').config()
+// const issuerId = process.env.ISSUER_ID;
 var jwt = require('jsonwebtoken')
 var fs = require('fs')
-var privateKey = fs.readFileSync('./files/key.pem', 'utf8');
+// var privateKey = fs.readFileSync('./files/key.pem', 'utf8');
 const request = require('request');
+
 
 class apiHelper{
     static timeMethod () {
@@ -13,7 +15,7 @@ class apiHelper{
 
     static getToken = function() {
         var currentTime = apiHelper.timeMethod()
-        return jwt.sign({ iss: issuerId, sub: 'sbMemfcIVWnzoVXXDf2', iat: currentTime[0], exp: currentTime[1] }, privateKey, { algorithm: 'RS512' })
+        return jwt.sign({ iss: process.env.ISSUER_ID, sub: 'sbMemfcIVWnzoVXXDf2', iat: currentTime[0], exp: currentTime[1] }, process.env.API_KEY, { algorithm: 'RS512' })
     }
 
     static getAccountData = function() {
@@ -29,7 +31,7 @@ class apiHelper{
         request(options,function (error, response, body) {
             // console.error('error:', error); // Print the error if one occurred
             // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-            // console.log('body:', body); // Print the HTML for the Google homepage.
+            console.log('body:', body); // Print the HTML for the Google homepage.
             return body
         });
     }
